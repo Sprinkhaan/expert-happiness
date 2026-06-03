@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title data-i18n="contactPage.meta.title">Contact | Energo</title>
+
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Tailwind CDN (oké voor nu) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { energo: "#0066FF", dark: "#0D0D0D", light: "#F8FAFC", subtle: "#64748B" },
+          fontFamily: { sans: ["Manrope", "sans-serif"] }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-white text-dark font-sans antialiased overflow-x-hidden">
+  <custom-topbar></custom-topbar>
+  <custom-navbar></custom-navbar>
+
+  <!-- Page Header -->
+  <header class="pt-32 pb-16 bg-light border-b border-dark/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <p class="text-sm font-semibold tracking-widest text-energo uppercase mb-4" data-i18n="contactPage.header.kicker">Contact</p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight max-w-3xl" data-i18n="contactPage.header.title"></h1>
+      <p class="text-lg text-subtle leading-relaxed max-w-2xl" data-i18n="contactPage.header.subtitle"></p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+
+      <!-- Contact Form -->
+      <section class="lg:col-span-7">
+        <h2 class="text-2xl font-bold mb-8" data-i18n="contactPage.form.title"></h2>
+
+        <!-- IMPORTANT: id must match your script.js handler -->
+        <form id="contactForm" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-sm font-medium mb-2">
+                <span data-i18n="contactPage.form.nameLabel"></span> <span class="text-energo">*</span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-3 border border-dark/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-energo/20 focus:border-energo transition-colors"
+                data-i18n-placeholder="contactPage.form.namePh"
+                placeholder=" "
+              />
+            </div>
+
+            <div>
+              <label for="company" class="block text-sm font-medium mb-2" data-i18n="contactPage.form.companyLabel"></label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                class="w-full px-4 py-3 border border-dark/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-energo/20 focus:border-energo transition-colors"
+                data-i18n-placeholder="contactPage.form.companyPh"
+                placeholder=" "
+              />
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="email" class="block text-sm font-medium mb-2">
+                <span data-i18n="contactPage.form.emailLabel"></span> <span class="text-energo">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-3 border border-dark/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-energo/20 focus:border-energo transition-colors"
+                data-i18n-placeholder="contactPage.form.emailPh"
+                placeholder=" "
+              />
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-medium mb-2" data-i18n="contactPage.form.phoneLabel"></label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="w-full px-4 py-3 border border-dark/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-energo/20 focus:border-energo transition-colors"
+                data-i18n-placeholder="contactPage.form.phonePh"
+                placeholder=" "
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="interest" class="block text-sm font-medium mb-2" data-i18n="contactPage.form.interestLabel"></label>
+            <select
+              id="interest"
+              name="interest"
+              class="w-full px-4 py-3 border border-dark/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-energo/20 focus:border-energo transition-colors bg-white"
+            >
+              <option value="" data-i18n="contactPage.form.interestOptions.placeholder"></option>
+              <option value="laadpalen" data-i18n="contactPage.form.interestOptions.laadpalen"></option>
+              <option value="batterijen" data-i18n="contactPage.form.interestOptions.batterijen"></option>
+              <option value="zonnepanelen" data-i18n="contactPage.form.interestOptions.zonnepanelen"></option>
+              <option value="engineering" data-i18n="contactPage.form.interestOptions.engineering"></option>
+              <option value="meerdere" data-i18n="contactPage.form.interestOptions.meerdere"></option>
+              <option value="anders" data-i18n="contactPage.form.interestOptions.anders"></option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium mb-2">
+              <span data-i18n="contactPage.form.messageLabel"></span> <span class="text-energo">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              class="w-full px-4 py-3 border border-dark/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-energo/20 focus:border-energo transition-colors resize-none"
+              data-i18n-placeholder="contactPage.form.messagePh"
+              placeholder=" "
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-dark hover:bg-dark/90 text-white font-semibold rounded-lg transition-all duration-300"
+          >
+            <span data-i18n="contactPage.form.submit"></span>
+            <i data-feather="send" class="w-4 h-4"></i>
+          </button>
+        </form>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-5 space-y-12">
+        <div class="bg-light rounded-xl p-8">
+          <h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+            <i data-feather="phone" class="w-5 h-5 text-energo"></i>
+            <span data-i18n="contactPage.sidebar.direct.title"></span>
+          </h3>
+
+          <dl class="space-y-4">
+            <div>
+              <dt class="text-sm text-subtle" data-i18n="contactPage.sidebar.direct.phoneLabel"></dt>
+              <dd>
+                <a href="tel:+31621382111" class="text-lg font-semibold hover:text-energo transition-colors" data-i18n="contactPage.sidebar.direct.phoneValue"></a>
+              </dd>
+            </div>
+            <div>
+              <dt class="text-sm text-subtle" data-i18n="contactPage.sidebar.direct.emailLabel"></dt>
+              <dd>
+                <a href="mailto:info@energo.nl" class="text-lg font-semibold hover:text-energo transition-colors" data-i18n="contactPage.sidebar.direct.emailValue"></a>
+              </dd>
+            </div>
+            <div>
+              <dt class="text-sm text-subtle" data-i18n="contactPage.sidebar.direct.addressLabel"></dt>
+              <dd class="text-lg font-semibold" data-i18n-html="contactPage.sidebar.direct.addressValue"></dd>
+            </div>
+            <div>
+              <dt class="text-sm text-subtle" data-i18n="contactPage.sidebar.direct.areaLabel"></dt>
+              <dd class="text-lg font-semibold flex items-center gap-2">
+                <i data-feather="map-pin" class="w-4 h-4"></i>
+                <span data-i18n="contactPage.sidebar.direct.areaValue"></span>
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold mb-6" data-i18n="contactPage.sidebar.expect.title"></h3>
+          <ol class="space-y-6">
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-energo/10 text-energo font-bold flex items-center justify-center text-sm">1</span>
+              <div>
+                <p class="font-semibold" data-i18n="contactPage.sidebar.expect.steps.0.title"></p>
+                <p class="text-sm text-subtle" data-i18n="contactPage.sidebar.expect.steps.0.desc"></p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-energo/10 text-energo font-bold flex items-center justify-center text-sm">2</span>
+              <div>
+                <p class="font-semibold" data-i18n="contactPage.sidebar.expect.steps.1.title"></p>
+                <p class="text-sm text-subtle" data-i18n="contactPage.sidebar.expect.steps.1.desc"></p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-energo/10 text-energo font-bold flex items-center justify-center text-sm">3</span>
+              <div>
+                <p class="font-semibold" data-i18n="contactPage.sidebar.expect.steps.2.title"></p>
+                <p class="text-sm text-subtle" data-i18n="contactPage.sidebar.expect.steps.2.desc"></p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="border-t border-dark/10 pt-8">
+          <h3 class="text-lg font-bold mb-6" data-i18n="contactPage.sidebar.why.title"></h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-3">
+              <i data-feather="check-circle" class="w-5 h-5 text-energo flex-shrink-0"></i>
+              <span data-i18n="contactPage.sidebar.why.items.0"></span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-feather="check-circle" class="w-5 h-5 text-energo flex-shrink-0"></i>
+              <span data-i18n="contactPage.sidebar.why.items.1"></span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-feather="check-circle" class="w-5 h-5 text-energo flex-shrink-0"></i>
+              <span data-i18n="contactPage.sidebar.why.items.2"></span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-feather="check-circle" class="w-5 h-5 text-energo flex-shrink-0"></i>
+              <span data-i18n="contactPage.sidebar.why.items.3"></span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <custom-footer></custom-footer>
+
+  <!-- i18n first -->
+  <script src="./i18n.js"></script>
+
+  <!-- components -->
+  <script src="./components/topbar.js"></script>
+  <script src="./components/navbar.js"></script>
+  <script src="./components/footer.js"></script>
+
+  <!-- global -->
+  <script src="./script.js"></script>
+
+  <script>
+    (async () => {
+      const saved = localStorage.getItem("lang");
+      await window.i18n.load(saved || "nl");
+      window.i18n.apply(document);
+      feather.replace();
+    })();
+  </script>
+</body>
+</html>

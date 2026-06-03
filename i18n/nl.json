@@ -1,0 +1,402 @@
+{
+  "site": {
+    "title": "Energo | Slimme energie-oplossingen"
+  },
+  "nav": {
+    "solutions": "Oplossingen",
+    "sectors": "Sectoren",
+    "projects": "Projecten",
+    "about": "Over Energo",
+    "contact": "Contact",
+    "cta": "Offerte aanvragen"
+  },
+  "topbar": {
+    "workArea": "Werkgebied: Nederland"
+  },
+  "projectsPage": {
+  "title": "Projecten",
+  "subtitle": "Een selectie van installaties en engineering-trajecten."
+  },
+  "solutionsPage": {
+    "title": "Oplossingen",
+    "subtitle": "Van ontwerp tot installatie: laadinfra, opslag, zon en engineering."
+  },
+  "home": {
+    "hero": {
+      "title": "Slimme energie-oplossingen.<br>Ontworpen en gerealiseerd door engineers.",
+      "subtitle": "Laadpalen • Batterijen • Zonnepanelen • Engineering • Schouwen",
+      "ctaPrimary": "Bekijk oplossingen"
+    },
+    "trust": {
+      "workAreaLabel": "Werkgebied",
+      "workAreaValue": "Nederland",
+      "stats": {
+        "installationsLabel": "Installaties",
+        "solarLabel": "Zonne-energie",
+        "chargepointsLabel": "Laadpunten"
+      }
+    },
+    "solutions": {
+      "title": "Onze <span class=\"text-energo\">Oplossingen</span>",
+      "items": [
+        {
+          "icon": "battery-charging",
+          "title": "Laadpalen",
+          "desc": "Slimme laadoplossingen voor elk bedrijf en elke locatie.",
+          "href": "/solutions/index.html#laadinfrastructuur"
+        },
+        {
+          "icon": "battery",
+          "title": "Batterijen",
+          "desc": "Energieopslag voor meer onafhankelijkheid en flexibiliteit.",
+          "href": "/solutions/index.html#batterijopslag"
+        },
+        {
+          "icon": "sun",
+          "title": "Zonnepanelen",
+          "desc": "Maximaal rendement uit uw dak of terrein.",
+          "href": "/solutions/index.html#zonne-energie"
+        },
+        {
+          "icon": "cpu",
+          "title": "Engineering",
+          "desc": "Technisch ontwerp en advies op maat.",
+          "href": "/solutions/index.html#engineering"
+        },
+        {
+          "icon": "clipboard",
+          "title": "Schouwen",
+          "desc": "Professionele inspectie en advies.",
+          "href": "/solutions/index.html#schouwen"
+        }
+      ],
+      "readMore": "Lees meer"
+    },
+    "usp": {
+      "title": "Waarom <span class=\"text-energo\">Energo</span>?",
+      "items": [
+        { "icon": "package", "title": "Turnkey", "desc": "Van ontwerp tot installatie en onderhoud - wij regelen het." },
+        { "icon": "layers", "title": "Eigen engineering", "desc": "Technische expertise in huis voor de beste oplossingen." },
+        { "icon": "activity", "title": "Slim energiemanagement", "desc": "Optimalisatie van verbruik en kosten." },
+        { "icon": "shield", "title": "Onderhoud & support", "desc": "Altijd service en garantie achteraf." }
+      ]
+    },
+    "process": {
+      "title": "Ons <span class=\"text-energo\">Proces</span>",
+      "steps": [
+        { "n": "1", "title": "Analyse", "subtitle": "Uw energiebehoefte in kaart", "desc": "We brengen uw situatie en wensen in kaart met een grondige analyse." },
+        { "n": "2", "title": "Ontwerp", "subtitle": "Technisch plan op maat", "desc": "Onze engineers maken een gedetailleerd ontwerp voor uw energieoplossing." },
+        { "n": "3", "title": "Realisatie", "subtitle": "Professionele installatie", "desc": "Onze gecertificeerde monteurs installeren uw systeem zorgvuldig en veilig." },
+        { "n": "4", "title": "Oplevering", "subtitle": "Training en onderhoud", "desc": "We zorgen voor een vlekkeloze overdracht en blijven beschikbaar voor onderhoud." }
+      ]
+    },
+    "sectors": {
+      "title": "Voor <span class=\"text-energo\">wie</span>?",
+      "items": [
+        { "icon": "briefcase", "title": "Zakelijk", "desc": "Energieoplossingen voor bedrijven en organisaties." },
+        { "icon": "home", "title": "Vastgoed/VvE", "desc": "Duurzame oplossingen voor gebouwencomplexen." },
+        { "icon": "truck", "title": "Logistiek", "desc": "Laadinfra voor wagenparken en distributiecentra." },
+        { "icon": "user", "title": "Particulier", "desc": "Persoonlijke energieoplossingen voor thuis." }
+      ]
+    },
+    "projects": {
+      "title": "Onze <span class=\"text-energo\">Projecten</span>",
+      "ctaAll": "Bekijk alle projecten",
+      "ctaView": "Bekijk project",
+      "items": [
+        {
+          "tags": ["Laadpalen", "Zakelijk"],
+          "title": "Project 1",
+          "desc": "Korte omschrijving van het project.",
+          "folder": "assets/images/project-1"
+        },
+        {
+          "tags": ["Zonnepanelen", "Industrie"],
+          "title": "Project 2",
+          "desc": "Korte omschrijving van het project.",
+          "folder": "assets/images/project-2"
+        },
+        {
+          "tags": ["Batterij", "Peak shaving"],
+          "title": "Project 3",
+          "desc": "Korte omschrijving van het project.",
+          "folder": "assets/images/project-3"
+        },
+        {
+          "tags": ["Engineering", "Netcongestie"],
+          "title": "Project 4",
+          "desc": "Korte omschrijving van het project.",
+          "folder": "assets/images/project-4"
+        },
+        {
+          "tags": ["Schouw", "Advies"],
+          "title": "Project 5",
+          "desc": "Korte omschrijving van het project.",
+          "folder": "assets/images/project-5"
+        },
+        {
+          "tags": ["Laadpalen", "Fleet"],
+          "title": "Project 6",
+          "desc": "Korte omschrijving van het project.",
+          "folder": "assets/images/project-6"
+        },
+        {
+          "tags": ["Zonnepanelen", "Dak"],
+          "title": "Project 7",
+          "desc": "Korte omschrijving van het project.",
+          "folder": "assets/images/project-7"
+        },
+        {
+          "tags": ["Batterij", "Back-up"],
+          "title": "Project 8",
+          "desc": "Korte omschrijving van het project.",
+          "folder": "assets/images/project-8"
+        },
+        {
+          "tags": ["Laadplein", "DC"],
+          "title": "Project 9",
+          "desc": "Korte omschrijving van het project.",
+          "folder": "assets/images/project-9"
+        },
+        {
+          "tags": ["Energiehub", "Integratie"],
+          "title": "Project 10",
+          "desc": "Korte omschrijving van het project.",
+          "folder": "assets/images/project-10"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Veelgestelde <span class=\"text-energo\">vragen</span>",
+      "items": [
+        {
+          "q": "Hoe omgaan met netcongestie?",
+          "a": "Onze systemen zijn ontworpen om optimaal te functioneren binnen de capaciteitsgrenzen van het net. We implementeren slimme load balancing en batterijopslag om piekbelasting te verminderen."
+        },
+        {
+          "q": "Wat is het rendement van zonnepanelen?",
+          "a": "Moderne zonnepanelen hebben een rendement tussen 18-22%. Het exacte rendement hangt af van factoren zoals oriëntatie, hellingshoek en schaduw. Wij maken altijd een gedetailleerde opbrengstberekening."
+        },
+        {
+          "q": "Zijn er subsidies beschikbaar?",
+          "a": "Ja, voor veel van onze oplossingen zijn subsidies beschikbaar. Wij adviseren u graag over de mogelijkheden."
+        },
+        {
+          "q": "Hoe werkt slim laden?",
+          "a": "Slimme laadpalen verdelen de beschikbare capaciteit dynamisch over alle aangesloten voertuigen. Hierdoor kunt u met beperkte aansluitcapaciteit toch meerdere auto's tegelijk opladen, zonder overbelasting."
+        }
+      ]
+    },
+    "partners": {
+      "title": "Onze <span class=\"text-energo\">Partners</span>"
+    },
+    "contact": {
+      "title": "Neem contact met ons op",
+      "subtitle": "Vul het formulier in en wij nemen zo snel mogelijk contact met u op.",
+      "name": "Uw naam",
+      "email": "Uw e-mailadres",
+      "phone": "Uw telefoonnummer",
+      "message": "Uw bericht",
+      "submit": "Verstuur bericht",
+      "validation": "Vul alle verplichte velden in (naam, e-mail en bericht)",
+      "success": "Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op."
+    },
+    "certificates": {
+      "title": "Onze <span class=\"text-energo\">Certificaten</span>"
+    }
+  },
+  "footer": {
+    "about": "Engineering-gedreven energietechniek voor een duurzame toekomst.",
+    "solutions": "Oplossingen",
+    "company": "Bedrijf",
+    "contact": "Contact",
+    "privacy": "Privacybeleid",
+    "terms": "Algemene voorwaarden",
+    "cookies": "Cookiebeleid",
+    "rights": "Alle rechten voorbehouden.",
+    "kvk": "KVK: 12345678 | BTW: NL123456789B01"
+  },
+  "solutions": {
+  "meta": {
+    "title": "Energo | Oplossingen"
+  },
+  "header": {
+    "kicker": "Onze expertise",
+    "title": "Oplossingen voor elke energievraag",
+    "subtitle": "Van technisch ontwerp tot realisatie en onderhoud. Wij leveren complete energie-infrastructuren die presteren, nu en in de toekomst."
+  },
+  "intro": "De energievraag groeit en netcapaciteit staat onder druk. Energo helpt organisaties met geïntegreerde oplossingen voor laden, opslag, opwek en engineering.",
+
+  "cta": {
+    "contact": "Adviesgesprek aanvragen",
+    "calculate": "Bereken uw besparing",
+    "scan": "Dakscan aanvragen",
+    "projects": "Bekijk projecten",
+    "specs": "Technische specificaties",
+    "viewMore": "Meer bekijken"
+  },
+
+  "items": {
+    "ev": {
+      "no": "01",
+      "title": "Laadinfrastructuur",
+      "desc": "Slimme laadoplossingen voor wagenparken, bedrijfsterreinen en publieke locaties. We ontwerpen schaalbaar: van enkele laadpunten tot complete hubs met dynamische load balancing. Inclusief advies over netcapaciteit, plaatsing, bekabeling en beheer.",
+      "points": [
+        "AC en DC laadpunten tot 350 kW",
+        "Slim load balancing",
+        "Integratie met energiemanagement",
+        "Monitoring en onderhoud"
+      ],
+      "badgeTitle": "Recent project",
+      "badgeSub": "Logistiek centrum — 40 laadpunten"
+    },
+
+    "battery": {
+      "no": "02",
+      "title": "Batterijopslag",
+      "desc": "Energieopslagsystemen voor peak shaving, back-up power en maximale zelfconsumptie. Ontworpen op basis van uw verbruiksprofiel en netcapaciteit. Ideaal bij netcongestie of wanneer u vermogen slimmer wilt sturen.",
+      "points": [
+        "Peak shaving en vermogensbeheer",
+        "Noodstroom (UPS) mogelijk",
+        "Combinatie met zon en laden",
+        "Netcongestie-oplossingen"
+      ],
+      "badgeTitle": "Capaciteit range",
+      "badgeSub": "50 kWh tot 2 MWh industriële systemen"
+    },
+
+    "solar": {
+      "no": "03",
+      "title": "Zonne-energie",
+      "desc": "Zonnepanelen en omvormers geselecteerd op rendement en levensduur. Van dakmontage tot grondgebonden installaties, inclusief complete aansluiting en realtime monitoring. Geoptimaliseerd voor uw verbruik en toekomstige uitbreiding.",
+      "points": [
+        "Zakelijke PV-installaties",
+        "Dak- en grondgebonden",
+        "Monitoring en optimalisatie",
+        "Integratie met opslag"
+      ],
+      "badgeTitle": "Gerealiseerd vermogen",
+      "badgeSub": "> 5 MWp aan commerciële installaties"
+    },
+    "engineering": {
+      "no": "04",
+      "title": "Engineering",
+      "desc": "Technisch ontwerp en advies voor complexe energievraagstukken. Van haalbaarheidsstudies en netcongestie-analyse tot detailengineering en uitvoeringsbegeleiding.",
+      "points": [
+        "Haalbaarheid, businesscase en dimensionering",
+        "Netcongestie-analyse en vermogensstrategie",
+        "E- en constructieve engineering",
+        "Technische due diligence & documentatie"
+      ],
+      "badgeTitle": "Engineering team",
+      "badgeSub": "E-leiding, WTB en ICT"
+    },
+    "surveys": {
+      "no": "05",
+      "title": "Schouwen",
+      "desc": "Professionele inspecties op locatie voor een snelle, kloppende projectstart. We toetsen techniek, veiligheid, routing en netaansluiting zodat uitvoering soepel verloopt.",
+      "points": [
+        "Locatiecheck, routing en bekabeling",
+        "Netaansluiting, meterkast en veiligheid",
+        "Werkvoorbereiding en planning",
+        "Risico’s en besparingskansen in kaart"
+      ],
+      "badgeTitle": "Op locatie",
+      "badgeSub": "Rapport + advies voor uitvoering"
+    }
+  },
+
+  "integration": {
+    "title": "Geïntegreerde energie-systemen",
+    "desc": "De kracht zit in de combinatie. Wij ontwerpen en realiseren systemen waarin laadpunten, batterijen en zonnepanelen samenwerken voor maximaal rendement.",
+    "cards": [
+      {
+        "title": "Smart Energy Hub",
+        "desc": "Centrale energiemanagement die laad-, opslag- en opweksystemen optimaliseert."
+      },
+      {
+        "title": "Maximale zelfconsumptie",
+        "desc": "Eigen opgewekte stroom direct benutten voor laden en opslag, minimale teruglevering."
+      },
+      {
+        "title": "Netcongestie-proof",
+        "desc": "Slimme vermogensregeling voorkomt overbelasting en maakt sneller laden mogelijk."
+      }
+    ]
+  },
+
+  "final": {
+    "title": "Klaar voor de volgende stap?",
+    "desc": "Bespreek uw situatie met een van onze engineers. We analyseren uw energievraag en maken een vrijblijvend voorstel op maat.",
+    "cta": "Plan een gesprek",
+    "call": "Bel 06 2138 2111",
+    "facts": [
+      { "k": "Reactietijd", "v": "Binnen 24 uur reactie" },
+      { "k": "Advies", "v": "Gratis en vrijblijvend" },
+      { "k": "Werkgebied", "v": "Heel Nederland" }
+    ]
+  }
+  },
+  "contactPage": {
+  "meta": { "title": "Contact | Energo - Slimme energie-oplossingen" },
+    "header": {
+      "kicker": "Contact",
+      "title": "Laten we uw energievraag bespreken",
+      "subtitle": "Heeft u een technische vraag, een project in gedachten of wilt u vrijblijvend advies? Ons team van engineers staat klaar."
+    },
+    "form": {
+      "title": "Stuur ons een bericht",
+      "nameLabel": "Naam",
+      "namePh": "Jan van Dijk",
+      "companyLabel": "Bedrijf",
+      "companyPh": "Bedrijfsnaam",
+      "emailLabel": "E-mail",
+      "emailPh": "jan@bedrijf.nl",
+      "phoneLabel": "Telefoon",
+      "phonePh": "06 1234 5678",
+      "interestLabel": "Waar bent u in geïnteresseerd?",
+      "interestOptions": {
+        "placeholder": "Maak een keuze",
+        "laadpalen": "Laadinfrastructuur",
+        "batterijen": "Batterijopslag",
+        "zonnepanelen": "Zonne-energie",
+        "engineering": "Engineering / Advies",
+        "meerdere": "Meerdere oplossingen",
+        "anders": "Anders"
+      },
+      "messageLabel": "Uw bericht",
+      "messagePh": "Beschrijf uw situatie of vraag...",
+      "submit": "Bericht versturen"
+    },
+    "sidebar": {
+      "direct": {
+        "title": "Direct contact",
+        "phoneLabel": "Telefoon",
+        "phoneValue": "0621382111",
+        "emailLabel": "E-mail",
+        "emailValue": "info@energo.nl",
+        "addressLabel": "Adres",
+        "addressValue": "Energolaan 123<br>1234 AB Nieuwegein",
+        "areaLabel": "Werkgebied",
+        "areaValue": "Nederland"
+      },
+      "expect": {
+        "title": "Wat kunt u verwachten?",
+        "steps": [
+          { "title": "Snelle reactie", "desc": "Binnen 24 uur ontvangt u een eerste reactie van ons team." },
+          { "title": "Technische analyse", "desc": "Een engineer bekijkt uw situatie en stelt gerichte vragen." },
+          { "title": "Vrijblijvend voorstel", "desc": "U ontvangt een heldere offerte of adviesrapport." }
+        ]
+      },
+      "why": {
+        "title": "Waarom Energo?",
+        "items": [
+          "Engineering-gedreven aanpak",
+          "250+ succesvolle installaties",
+          "Turnkey: van ontwerp tot onderhoud",
+          "Gecertificeerde installateurs"
+        ]
+      }
+    }
+  }
+}

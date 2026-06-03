@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="../" />
+
+  <title data-i18n="solutions.meta.title">Energo | Oplossingen</title>
+
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Tailwind CDN (oké voor nu) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { energo: "#0066FF", dark: "#0D0D0D", light: "#F8FAFC" },
+          fontFamily: { sans: ["Manrope", "sans-serif"] }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    .sol-point::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      flex: 0 0 20px;
+      background: currentColor;
+      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") center / contain no-repeat;
+              mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") center / contain no-repeat;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-dark font-sans antialiased overflow-x-hidden">
+
+  <custom-topbar></custom-topbar>
+  <custom-navbar></custom-navbar>
+
+  <!-- PAGE HEADER -->
+  <header class="pt-28 md:pt-32 pb-12 md:pb-16 bg-light border-b border-dark/5">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold tracking-widest text-energo uppercase mb-4"
+           data-i18n="solutions.header.kicker"></p>
+
+        <h1 class="text-4xl md:text-5xl font-bold mb-5 leading-tight"
+            data-i18n="solutions.header.title"></h1>
+
+        <p class="text-lg text-dark/70 leading-relaxed"
+           data-i18n="solutions.header.subtitle"></p>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="py-12 md:py-16 bg-light">
+    <div class="container mx-auto px-6 max-w-3xl text-center">
+      <p class="text-lg leading-relaxed text-dark/80"
+         data-i18n="solutions.intro"></p>
+    </div>
+  </section>
+
+  <!-- ========== SOLUTION 1 (EV) ========== -->
+  <section id="laadinfrastructuur" class="py-16 md:py-20 border-b border-dark/5 scroll-mt-28 md:scroll-mt-32">
+    <div class="container mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+
+        <!-- TEXT -->
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <span class="w-12 h-px bg-energo"></span>
+            <span class="text-sm font-medium text-dark/50 uppercase tracking-wider" data-i18n="solutions.items.ev.no"></span>
+          </div>
+
+          <h2 class="text-3xl md:text-4xl font-bold mb-5" data-i18n="solutions.items.ev.title"></h2>
+
+          <p class="text-dark/70 text-lg leading-relaxed mb-6"
+             data-i18n="solutions.items.ev.desc"></p>
+
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.ev.points.0"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.ev.points.1"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.ev.points.2"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.ev.points.3"></span></li>
+          </ul>
+
+          <!-- EV: alleen contact -->
+          <div class="flex flex-wrap gap-4">
+            <a href="./contact.html"
+               class="inline-flex items-center gap-2 px-6 py-3 bg-energo hover:bg-energo/90 text-white font-semibold rounded-lg transition-all duration-300">
+              <span data-i18n="solutions.cta.contact"></span>
+              <i data-feather="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- MEDIA -->
+        <div>
+          <div class="relative">
+            <div class="absolute -inset-4 bg-energo/5 rounded-2xl"></div>
+
+            <div class="relative rounded-2xl overflow-hidden border border-dark/10 bg-dark/5">
+              <img src="./assets/images/overig/1.jpeg" alt=""
+                   class="w-full h-[320px] md:h-[380px] object-cover" loading="lazy" />
+
+              <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-xl border border-dark/10">
+                <div class="flex items-center justify-between gap-4">
+                  <div>
+                    <p class="font-semibold" data-i18n="solutions.items.ev.badgeTitle"></p>
+                    <p class="text-sm text-dark/60" data-i18n="solutions.items.ev.badgeSub"></p>
+                  </div>
+                  <i data-feather="external-link" class="w-5 h-5 text-energo"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOLUTION 2 (BATTERY) ========== -->
+  <section id="batterijopslag" class="py-16 md:py-20 border-b border-dark/5 bg-light scroll-mt-28 md:scroll-mt-32">
+    <div class="container mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+
+        <!-- MEDIA -->
+        <div class="order-1">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-energo/5 rounded-2xl"></div>
+
+            <div class="relative rounded-2xl overflow-hidden border border-dark/10 bg-dark/5">
+              <img src="./assets/images/overig/2.jpeg" alt=""
+                   class="w-full h-[320px] md:h-[380px] object-cover" loading="lazy" />
+
+              <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-xl border border-dark/10">
+                <div class="flex items-center justify-between gap-4">
+                  <div>
+                    <p class="font-semibold" data-i18n="solutions.items.battery.badgeTitle"></p>
+                    <p class="text-sm text-dark/60" data-i18n="solutions.items.battery.badgeSub"></p>
+                  </div>
+                  <i data-feather="battery-charging" class="w-5 h-5 text-energo"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TEXT -->
+        <div class="order-2">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="w-12 h-px bg-energo"></span>
+            <span class="text-sm font-medium text-dark/50 uppercase tracking-wider" data-i18n="solutions.items.battery.no"></span>
+          </div>
+
+          <h2 class="text-3xl md:text-4xl font-bold mb-5" data-i18n="solutions.items.battery.title"></h2>
+
+          <p class="text-dark/70 text-lg leading-relaxed mb-6"
+             data-i18n="solutions.items.battery.desc"></p>
+
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.battery.points.0"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.battery.points.1"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.battery.points.2"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.battery.points.3"></span></li>
+          </ul>
+
+          <!-- Battery: geen CTA’s -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOLUTION 3 (SOLAR) ========== -->
+  <section id="zonne-energie" class="py-16 md:py-20 border-b border-dark/5 scroll-mt-28 md:scroll-mt-32">
+    <div class="container mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+
+        <!-- TEXT -->
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <span class="w-12 h-px bg-energo"></span>
+            <span class="text-sm font-medium text-dark/50 uppercase tracking-wider" data-i18n="solutions.items.solar.no"></span>
+          </div>
+
+          <h2 class="text-3xl md:text-4xl font-bold mb-5" data-i18n="solutions.items.solar.title"></h2>
+
+          <p class="text-dark/70 text-lg leading-relaxed mb-6"
+             data-i18n="solutions.items.solar.desc"></p>
+
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.solar.points.0"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.solar.points.1"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.solar.points.2"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.solar.points.3"></span></li>
+          </ul>
+
+          <!-- Solar: blauw=contact, outline=projecten -->
+          <div class="flex flex-wrap gap-4">
+            <a href="./contact.html"
+               class="inline-flex items-center gap-2 px-6 py-3 bg-energo hover:bg-energo/90 text-white font-semibold rounded-lg transition-all duration-300">
+              <span data-i18n="solutions.cta.scan"></span>
+              <i data-feather="arrow-right" class="w-4 h-4"></i>
+            </a>
+
+            <a href="./projects/index.html"
+               class="inline-flex items-center gap-2 px-6 py-3 border border-dark/20 hover:border-energo text-dark font-semibold rounded-lg transition-all duration-300">
+              <span data-i18n="solutions.cta.viewMore"></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- MEDIA -->
+        <div>
+          <div class="relative">
+            <div class="absolute -inset-4 bg-energo/5 rounded-2xl"></div>
+
+            <div class="relative rounded-2xl overflow-hidden border border-dark/10 bg-dark/5">
+              <img src="./assets/images/overig/3.jpeg" alt=""
+                   class="w-full h-[320px] md:h-[380px] object-cover" loading="lazy" />
+
+              <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-xl border border-dark/10">
+                <div class="flex items-center justify-between gap-4">
+                  <div>
+                    <p class="font-semibold" data-i18n="solutions.items.solar.badgeTitle"></p>
+                    <p class="text-sm text-dark/60" data-i18n="solutions.items.solar.badgeSub"></p>
+                  </div>
+                  <i data-feather="sun" class="w-5 h-5 text-energo"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOLUTION 4 (ENGINEERING) ========== -->
+  <section id="engineering" class="py-16 md:py-20 border-b border-dark/5 bg-light scroll-mt-28 md:scroll-mt-32">
+    <div class="container mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+
+        <!-- MEDIA -->
+        <div class="order-1">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-energo/5 rounded-2xl"></div>
+            <div class="relative rounded-2xl overflow-hidden border border-dark/10 bg-dark/5">
+              <img src="./assets/images/overig/4.jpeg" alt=""
+                   class="w-full h-[320px] md:h-[380px] object-cover" loading="lazy" />
+
+              <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-xl border border-dark/10">
+                <div class="flex items-center justify-between gap-4">
+                  <div>
+                    <p class="font-semibold" data-i18n="solutions.items.engineering.badgeTitle"></p>
+                    <p class="text-sm text-dark/60" data-i18n="solutions.items.engineering.badgeSub"></p>
+                  </div>
+                  <i data-feather="cpu" class="w-5 h-5 text-energo"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TEXT -->
+        <div class="order-2">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="w-12 h-px bg-energo"></span>
+            <span class="text-sm font-medium text-dark/50 uppercase tracking-wider" data-i18n="solutions.items.engineering.no"></span>
+          </div>
+
+          <h2 class="text-3xl md:text-4xl font-bold mb-5" data-i18n="solutions.items.engineering.title"></h2>
+
+          <p class="text-dark/70 text-lg leading-relaxed mb-6"
+             data-i18n="solutions.items.engineering.desc"></p>
+
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.engineering.points.0"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.engineering.points.1"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.engineering.points.2"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.engineering.points.3"></span></li>
+          </ul>
+
+          <!-- Engineering: geen CTA’s -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOLUTION 5 (SCHOUWEN) ========== -->
+  <section id="schouwen" class="py-16 md:py-20 border-b border-dark/5 scroll-mt-28 md:scroll-mt-32">
+    <div class="container mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <span class="w-12 h-px bg-energo"></span>
+            <span class="text-sm font-medium text-dark/50 uppercase tracking-wider" data-i18n="solutions.items.surveys.no"></span>
+          </div>
+
+          <h2 class="text-3xl md:text-4xl font-bold mb-5" data-i18n="solutions.items.surveys.title"></h2>
+
+          <p class="text-dark/70 text-lg leading-relaxed mb-6"
+             data-i18n="solutions.items.surveys.desc"></p>
+
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.surveys.points.0"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.surveys.points.1"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.surveys.points.2"></span></li>
+            <li class="flex items-start gap-3 text-dark/80"><i data-feather="check" class="w-5 h-5 text-energo mt-0.5 flex-shrink-0"></i><span data-i18n="solutions.items.surveys.points.3"></span></li>
+          </ul>
+
+        </div>
+
+        <div>
+          <div class="relative">
+            <div class="absolute -inset-4 bg-energo/5 rounded-2xl"></div>
+            <div class="relative rounded-2xl overflow-hidden border border-dark/10 bg-dark/5">
+              <img src="./assets/images/overig/5.jpeg" alt=""
+                   class="w-full h-[320px] md:h-[380px] object-cover" loading="lazy" />
+
+              <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-xl border border-dark/10">
+                <div class="flex items-center justify-between gap-4">
+                  <div>
+                    <p class="font-semibold" data-i18n="solutions.items.surveys.badgeTitle"></p>
+                    <p class="text-sm text-dark/60" data-i18n="solutions.items.surveys.badgeSub"></p>
+                  </div>
+                  <i data-feather="clipboard" class="w-5 h-5 text-energo"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEGRATION -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-5" data-i18n="solutions.integration.title"></h2>
+        <p class="text-lg text-dark/70" data-i18n="solutions.integration.desc"></p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="border border-dark/10 rounded-2xl p-8 text-center hover:border-energo/30 transition-all duration-300">
+          <div class="w-16 h-16 rounded-full bg-energo/10 flex items-center justify-center mx-auto mb-6">
+            <i data-feather="link" class="w-7 h-7 text-energo"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3" data-i18n="solutions.integration.cards.0.title"></h3>
+          <p class="text-dark/70" data-i18n="solutions.integration.cards.0.desc"></p>
+        </div>
+
+        <div class="border border-dark/10 rounded-2xl p-8 text-center hover:border-energo/30 transition-all duration-300">
+          <div class="w-16 h-16 rounded-full bg-energo/10 flex items-center justify-center mx-auto mb-6">
+            <i data-feather="trending-up" class="w-7 h-7 text-energo"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3" data-i18n="solutions.integration.cards.1.title"></h3>
+          <p class="text-dark/70" data-i18n="solutions.integration.cards.1.desc"></p>
+        </div>
+
+        <div class="border border-dark/10 rounded-2xl p-8 text-center hover:border-energo/30 transition-all duration-300">
+          <div class="w-16 h-16 rounded-full bg-energo/10 flex items-center justify-center mx-auto mb-6">
+            <i data-feather="shield" class="w-7 h-7 text-energo"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3" data-i18n="solutions.integration.cards.2.title"></h3>
+          <p class="text-dark/70" data-i18n="solutions.integration.cards.2.desc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-20 md:py-24 bg-dark text-white">
+    <div class="container mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" data-i18n="solutions.final.title"></h2>
+          <p class="text-lg text-white/70 mb-8" data-i18n="solutions.final.desc"></p>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="./contact"
+               class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-energo hover:bg-energo/90 text-white font-semibold rounded-lg transition-all duration-300">
+              <span data-i18n="solutions.final.cta"></span>
+              <i data-feather="arrow-right" class="w-5 h-5"></i>
+            </a>
+
+            <a href="tel:+31621382111"
+               class="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/30 hover:border-white text-white font-semibold rounded-lg transition-all duration-300">
+              <i data-feather="phone" class="w-5 h-5"></i>
+              <span data-i18n="solutions.final.call"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:pl-12">
+          <div class="border-l-2 border-energo pl-8 space-y-6">
+            <div>
+              <p class="text-sm text-white/50 uppercase tracking-wider mb-1" data-i18n="solutions.final.facts.0.k"></p>
+              <p class="text-xl font-semibold" data-i18n="solutions.final.facts.0.v"></p>
+            </div>
+            <div>
+              <p class="text-sm text-white/50 uppercase tracking-wider mb-1" data-i18n="solutions.final.facts.1.k"></p>
+              <p class="text-xl font-semibold" data-i18n="solutions.final.facts.1.v"></p>
+            </div>
+            <div>
+              <p class="text-sm text-white/50 uppercase tracking-wider mb-1" data-i18n="solutions.final.facts.2.k"></p>
+              <p class="text-xl font-semibold" data-i18n="solutions.final.facts.2.v"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <custom-footer></custom-footer>
+
+  <script src="./i18n.js"></script>
+  <script src="./components/topbar.js"></script>
+  <script src="./components/navbar.js"></script>
+  <script src="./components/footer.js"></script>
+  <script src="./script.js"></script>
+
+  <script>
+    (async () => {
+      const saved = localStorage.getItem("lang");
+      await window.i18n.load(saved || "nl");
+      window.i18n.apply(document);
+      feather.replace();
+    })();
+  </script>
+
+</body>
+</html>

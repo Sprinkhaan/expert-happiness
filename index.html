@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Energo | Slimme energie-oplossingen</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { energo: "#0066FF", dark: "#0D0D0D", light: "#F8FAFC" },
+          fontFamily: { sans: ["Manrope", "sans-serif"] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-light text-dark font-sans antialiased overflow-x-hidden">
+  <custom-topbar></custom-topbar>
+  <custom-navbar></custom-navbar>
+
+  <hero-section></hero-section>
+  <trust-section></trust-section>
+  <solutions-section></solutions-section>
+  <usp-section></usp-section>
+  <process-section></process-section>
+  <sectors-section></sectors-section>
+  <projects-section limit="3"></projects-section>
+  <faq-section></faq-section>
+  <partners-section></partners-section>
+  <contact-section></contact-section>
+  <certificates-section></certificates-section>
+
+  <custom-footer></custom-footer>
+  <project-gallery></project-gallery>
+
+  <!-- i18n must load before components render -->
+  <script src="i18n.js"></script>
+
+  <!-- components -->
+  <script src="components/topbar.js"></script>
+  <script src="components/navbar.js"></script>
+  <script src="components/footer.js"></script>
+  <script src="components/project-gallery.js"></script>
+
+  <!-- sections -->
+  <script src="sections/hero.js"></script>
+  <script src="sections/trust.js"></script>
+  <script src="sections/solutions.js"></script>
+  <script src="sections/usp.js"></script>
+  <script src="sections/process.js"></script>
+  <script src="sections/sectors.js"></script>
+  <script src="sections/projects.js"></script>
+  <script src="sections/faq.js"></script>
+  <script src="sections/partners.js"></script>
+  <script src="sections/contact.js"></script>
+  <script src="sections/certificates.js"></script>
+
+  <script src="script.js"></script>
+
+  <script>
+  (async () => {
+    const saved = localStorage.getItem("lang");
+    await window.i18n.load(saved || "nl");
+    feather.replace();
+  })();
+</script>
+</body>
+</html>
