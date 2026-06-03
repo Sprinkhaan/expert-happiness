@@ -106,62 +106,62 @@
       "items": [
         {
           "tags": ["Laadpalen", "Zakelijk"],
-          "title": "Project 1",
-          "desc": "Korte omschrijving van het project.",
+          "title": "Kantoorlocatie met slimme laadinfra",
+          "desc": "Installatie van 12 slimme AC-laadpunten voor medewerkers en bezoekers, inclusief load balancing en toekomstbestendige uitbreiding.",
           "folder": "assets/images/project-1"
         },
         {
           "tags": ["Zonnepanelen", "Industrie"],
-          "title": "Project 2",
-          "desc": "Korte omschrijving van het project.",
+          "title": "PV-installatie op bedrijfshal",
+          "desc": "Ontwerp en realisatie van een grootschalige zonne-installatie voor een industriële locatie met realtime monitoring.",
           "folder": "assets/images/project-2"
         },
         {
           "tags": ["Batterij", "Peak shaving"],
-          "title": "Project 3",
-          "desc": "Korte omschrijving van het project.",
+          "title": "Batterijopslag voor vermogensbeheer",
+          "desc": "Energieopslagsysteem ingezet voor peak shaving en optimalisatie van het energieverbruik tijdens piekbelasting.",
           "folder": "assets/images/project-3"
         },
         {
           "tags": ["Engineering", "Netcongestie"],
-          "title": "Project 4",
-          "desc": "Korte omschrijving van het project.",
+          "title": "Netcongestie-analyse productiebedrijf",
+          "desc": "Technische studie en vermogensanalyse om toekomstige uitbreidingen mogelijk te maken binnen bestaande netcapaciteit.",
           "folder": "assets/images/project-4"
         },
         {
           "tags": ["Schouw", "Advies"],
-          "title": "Project 5",
-          "desc": "Korte omschrijving van het project.",
+          "title": "Technische locatieschouw",
+          "desc": "Uitgebreide inspectie van infrastructuur, netaansluiting en installatiemogelijkheden als basis voor een maatwerkoplossing.",
           "folder": "assets/images/project-5"
         },
         {
           "tags": ["Laadpalen", "Fleet"],
-          "title": "Project 6",
-          "desc": "Korte omschrijving van het project.",
+          "title": "Laadoplossing voor wagenpark",
+          "desc": "Volledige laadinfra voor een groeiend elektrisch wagenpark met centraal beheer en slimme vermogensverdeling.",
           "folder": "assets/images/project-6"
         },
         {
           "tags": ["Zonnepanelen", "Dak"],
-          "title": "Project 7",
-          "desc": "Korte omschrijving van het project.",
+          "title": "Duurzaam dakproject",
+          "desc": "Zonnepaneleninstallatie op een commercieel dakvlak gericht op maximale opbrengst en zelfconsumptie.",
           "folder": "assets/images/project-7"
         },
         {
           "tags": ["Batterij", "Back-up"],
-          "title": "Project 8",
-          "desc": "Korte omschrijving van het project.",
+          "title": "Back-up energiesysteem",
+          "desc": "Batterijopslag gecombineerd met noodstroomfunctionaliteit voor bedrijfscontinuïteit bij stroomuitval.",
           "folder": "assets/images/project-8"
         },
         {
           "tags": ["Laadplein", "DC"],
-          "title": "Project 9",
-          "desc": "Korte omschrijving van het project.",
+          "title": "Snellaadplein logistieke hub",
+          "desc": "Ontwikkeling van een DC-laadplein voor elektrische bedrijfsvoertuigen met hoge beschikbaarheid en schaalbaarheid.",
           "folder": "assets/images/project-9"
         },
         {
           "tags": ["Energiehub", "Integratie"],
-          "title": "Project 10",
-          "desc": "Korte omschrijving van het project.",
+          "title": "Geïntegreerde energiehub",
+          "desc": "Slim samenspel tussen zonnepanelen, batterijopslag en laadinfrastructuur voor optimaal energiebeheer.",
           "folder": "assets/images/project-10"
         }
       ]

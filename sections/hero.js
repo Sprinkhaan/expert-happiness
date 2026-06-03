@@ -11,10 +11,14 @@ class HeroSection extends HTMLElement {
     ];
 
     this.index = Math.floor(Math.random() * this.images.length);
+
     this.render();
     this.startSlideshow();
+    this.animateCounters();
 
-    window.i18n.onChange(() => window.i18n.apply(this));
+    window.i18n.onChange(() => {
+      window.i18n.apply(this);
+    });
   }
 
   startSlideshow() {
@@ -35,6 +39,34 @@ class HeroSection extends HTMLElement {
     }, 4500);
   }
 
+  animateCounters() {
+    const counters = this.querySelectorAll("[data-counter]");
+
+    counters.forEach((counter) => {
+      const target = Number(counter.dataset.counter);
+
+      let current = 0;
+      const step = Math.max(1, Math.ceil(target / 60));
+
+      const timer = setInterval(() => {
+        current += step;
+
+        if (current >= target) {
+          current = target;
+
+          if (target === 250) counter.textContent = "250+";
+          else if (target === 500) counter.textContent = "500+";
+          else if (target === 5) counter.textContent = "5 MW";
+          else counter.textContent = target;
+
+          clearInterval(timer);
+        } else {
+          counter.textContent = current;
+        }
+      }, 25);
+    });
+  }
+
   disconnectedCallback() {
     if (this.interval) clearInterval(this.interval);
   }
@@ -43,67 +75,138 @@ class HeroSection extends HTMLElement {
     const firstImage = this.images[this.index];
 
     this.innerHTML = `
-      <section class="relative min-h-[68vh] md:min-h-[72vh] flex items-center overflow-hidden pt-20">
+      <section class="relative min-h-[72vh] md:min-h-[88vh] flex items-center overflow-hidden">
 
-        <!-- Background layers -->
-        <div data-hero-layer
-             class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
-             style="background-image:url('${firstImage}'); opacity:1;"></div>
-
-        <div data-hero-layer
-             class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
-             style="opacity:0;"></div>
-
-        <!-- Neutral dark overlay -->
-        <div class="absolute inset-0 bg-black/35"></div>
-
-        <!-- Top/bottom depth -->
-        <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/55"></div>
-
-        <!-- Radial halo BEHIND logo & text (no box) -->
-        <div class="absolute inset-0 pointer-events-none"
-             style="background:
-               radial-gradient(
-                 520px 300px at 50% 38%,
-                 rgba(255,255,255,0.38),
-                 rgba(255,255,255,0.18) 35%,
-                 rgba(255,255,255,0) 70%
-               );">
+        <!-- Background -->
+        <div
+          data-hero-layer
+          class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+          style="background-image:url('${firstImage}'); opacity:1;">
         </div>
 
-        <!-- Soft vignette -->
-        <div class="absolute inset-0 pointer-events-none"
-             style="box-shadow: inset 0 0 120px rgba(0,0,0,0.6)"></div>
+        <div
+          data-hero-layer
+          class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+          style="opacity:0;">
+        </div>
 
-        <!-- Content -->
-        <div class="container mx-auto px-6 z-10">
-          <div class="flex flex-col items-center text-center">
+        <!-- overlays -->
+        <div class="absolute inset-0 bg-black/55"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80"></div>
 
-            <!-- LOGO (no container, only glow) -->
+        <!-- content -->
+        <div class="container mx-auto px-6 relative z-10">
+
+          <div class="max-w-5xl mx-auto text-center">
+
             <img
               src="./assets/logo-jpeg.png"
-              alt="Energo logo"
-              class="h-20 md:h-24 w-auto mb-6 select-none hero-logo-breathe"
+              alt="Energo"
+              class="h-16 md:h-20 mx-auto mb-6 hero-logo-breathe"
             />
 
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight text-white max-w-4xl"
-                data-i18n-html="home.hero.title"></h1>
+            <h1
+              class="text-white text-3xl md:text-6xl font-bold leading-tight mb-4"
+              data-i18n-html="home.hero.title">
+            </h1>
 
-            <p class="text-lg md:text-xl text-white/90 mb-8 max-w-2xl"
-               data-i18n="home.hero.subtitle"></p>
+            <p
+              class="text-white/90 text-lg md:text-xl max-w-3xl mx-auto mb-6"
+              data-i18n="home.hero.subtitle">
+            </p>
 
-            <div class="flex flex-wrap gap-4 justify-center">
-              <a href="#oplossingen"
-                 class="px-8 py-3 bg-white text-energo font-semibold rounded-lg
-                        hover:bg-white/90 transition-all duration-300 transform hover:-translate-y-1 shadow-lg"
-                 data-i18n="home.hero.ctaPrimary"></a>
+            <div class="flex flex-col sm:flex-row justify-center gap-3 mb-6">
+
+              <a
+                href="#oplossingen"
+                class="w-full sm:w-auto px-8 py-3 bg-energo text-white rounded-xl font-semibold hover:-translate-y-1 transition-all shadow-xl"
+                data-i18n="home.hero.ctaPrimary">
+              </a>
+
+              <a
+                href="./projects/"
+                class="w-full sm:w-auto px-8 py-3 bg-white/10 backdrop-blur text-white rounded-xl border border-white/20 hover:bg-white/20 transition-all">
+                Bekijk projecten
+              </a>
+
             </div>
+
+            <!-- Desktop only trust pills -->
+            <div class="hidden md:flex flex-wrap justify-center gap-3 mb-8">
+
+              <span class="px-4 py-2 rounded-full bg-white/10 backdrop-blur border border-white/20 text-white text-sm">
+                ✓ Eigen engineering
+              </span>
+
+              <span class="px-4 py-2 rounded-full bg-white/10 backdrop-blur border border-white/20 text-white text-sm">
+                ✓ Turnkey realisatie
+              </span>
+
+              <span class="px-4 py-2 rounded-full bg-white/10 backdrop-blur border border-white/20 text-white text-sm">
+                ✓ Werkgebied Nederland
+              </span>
+
+            </div>
+
+            <!-- Stats -->
+            <div
+              class="grid grid-cols-3 overflow-hidden rounded-2xl shadow-2xl border border-white/10 bg-white/10 backdrop-blur-xl max-w-2xl mx-auto">
+
+              <div class="p-3 md:p-5">
+                <div
+                  class="text-2xl md:text-5xl font-bold text-white mb-1"
+                  data-counter="250">
+                  0
+                </div>
+
+                <div
+                  class="text-white/70 text-[10px] md:text-sm"
+                  data-i18n="home.trust.stats.installationsLabel">
+                </div>
+              </div>
+
+              <div class="p-3 md:p-5 border-x border-white/10">
+                <div
+                  class="text-2xl md:text-5xl font-bold text-white mb-1"
+                  data-counter="5">
+                  0
+                </div>
+
+                <div
+                  class="text-white/70 text-[10px] md:text-sm"
+                  data-i18n="home.trust.stats.solarLabel">
+                </div>
+              </div>
+
+              <div class="p-3 md:p-5">
+                <div
+                  class="text-2xl md:text-5xl font-bold text-white mb-1"
+                  data-counter="500">
+                  0
+                </div>
+
+                <div
+                  class="text-white/70 text-[10px] md:text-sm"
+                  data-i18n="home.trust.stats.chargepointsLabel">
+                </div>
+              </div>
+
+            </div>
+
           </div>
+
         </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 text-white/70 animate-bounce z-30">
+          <i data-feather="chevron-down" class="w-8 h-8"></i>
+        </div>
+
       </section>
     `;
 
     window.i18n.apply(this);
+    feather.replace();
   }
 }
 
